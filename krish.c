@@ -1,0 +1,83 @@
+#include<stdio.h>
+
+  main()  
+    
+   { 
+      printf("\n\n === welcome to telecom  call service ==\n\n");
+      
+      printf("press 1 for English\n");
+      printf("press 2 for Hindi\n");
+      printf("press 3 for Gujarati\n");
+      
+      char choice;
+      
+      printf("\n");
+      printf("Enter your choice : ");
+      scanf("%c" , &choice );
+      
+          switch (choice)
+          {  
+            case '1' :
+             	
+             	printf("\n press a for  Internet Recharge");
+             	printf("\n press b for  Top-up   Recharge");
+             	printf("\n press c for  Special  Recharge");
+             	 
+                char select;
+                printf("\n\n");
+                printf("Enter your choice : ");
+                scanf(" %c" , &select ); 
+                
+                switch (select)
+                { 
+                    case 'a' :
+                    	printf("your Internet Recharge Done");
+                    	break;
+                    
+                    case 'b' :
+                    	printf("your Top-up Rechage Done");
+                    break;
+                    
+                    case 'c' :
+                    	printf("your sepcial Rechage Done");
+                    break;
+                    default:
+                    	printf("end");
+                        
+				} 
+				
+				break;
+				
+				case '2' :
+             	
+             	printf("\n Internet Recharge ke liye a dabaiye");
+             	printf("\n Top-up Recharge ke liye b dabaiye");
+             	printf("\n special Recharge ke liye c dabaiye");
+             	 
+               char op;
+               printf("\n\n");
+                printf("Enter your choice : ");
+                scanf(" %c" , &op ); 
+                
+                switch (op)
+                { 
+                    case 'a' :
+                    	printf("aapne safaltapurvak Internet Recharge kar liya he");
+                    	
+                    break;
+                    
+                    case 'b' :
+                    	printf("aapne safaltapurvak Internet Recharge kar liya he");
+                    break;
+                    
+                    case 'c' :
+                    	printf("aapne safaltapurvak Internet Recharge kar liya he");
+                    break;  
+					
+					}
+					
+					break;
+				
+            
+		  }
+   }

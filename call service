@@ -77,7 +77,40 @@
 					}
 					
 					break;
-				
+				case '3' :
+             	
+             	printf("\n Internet Recharge mate a dabavo");
+             	printf("\n Top-up Recharge mate b dabavo");
+             	printf("\n special Recharge mate c dabavo");
+             	 
+               char gop;
+               printf("\n\n");
+                printf("Enter your choice : ");
+                scanf(" %c" , &gop ); 
+                
+                switch (gop)
+                { 
+                    case 'a' :
+                    	printf("Tame safaltapurvak Specical Recharge karyu chhe");
+                    	
+                    break;
+                    
+                    case 'b' :
+                    	printf("Tame safaltapurvak Specical Recharge karyu chhe");
+                    break;
+                    
+                    case 'c' :
+                    	printf("Tame safaltapurvak Specical Recharge karyu chhe");
+                    break; 
+					default:
+                    	printf("This number is invalid"); 
+				}
+                    
+                
+                     break; 
+                 }
+		  
+           }
             
-		  }
-   }
+		  
+   

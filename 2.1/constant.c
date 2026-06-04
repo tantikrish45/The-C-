@@ -3,8 +3,6 @@
 #define P printf
 
 main()
-
- 
  {
  	P( "%f" ,PI);
  }

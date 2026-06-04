@@ -4,7 +4,8 @@
 main()
 {
 	float r;
-	printf("Enter your redius : ");scanf("%f", &r);
+	printf("Enter your redius : ");
+	scanf("%f", &r);
 	
 	printf("perimiti of circle : %0.2f", 2 * PI * r);
 }

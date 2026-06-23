@@ -25,36 +25,3 @@ main()
     // {
 	//  printf("\nEnvalied pelindrome");
 	// }
-
-	useEffect(() => {
-  let cancelled = false;
-  let loadedCount = 0;
-  const images: HTMLImageElement[] = [];
-
-  for (let i = 1; i <= FRAME_COUNT; i++) {
-    const img = new Image();
-    img.src = framePath(i);
-
-    img.onload = img.onerror = () => {
-      if (cancelled) return;
-
-      loadedCount++;
-      const progress = loadedCount / FRAME_COUNT;
-      setLoadProgress(progress);
-
-      if (loadedCount === FRAME_COUNT) {
-        loadedRef.current = true;
-        setLoaded(true);
-      }
-    };
-
-    images.push(img);
-  }
-
-  framesRef.current = images;
-
-  return () => {
-    cancelled = true;
-  };
-}, []);
-}

@@ -19,7 +19,7 @@ void main()
         if (str[i] != str[len - i - 1])
         {
             op = 0;
-            break;
+        
         }
     }
 
